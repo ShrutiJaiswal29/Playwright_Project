@@ -1,0 +1,4 @@
+Accounts: [
+  { id: 13344, customerId: 12212, type: 'CHECKING', balance: 5013.93 }
+]
+Total accounts: 1

@@ -1,0 +1,8 @@
+user1781350619122
+Test@123
+Registration successful
+New Account ID: 
+From: 34878 To: 34878
+Before - from: 515.5 To: 515.5
+Transfer Complete!
+After - from: 515.5 To: 515.5

@@ -1,0 +1,4 @@
+BEFORE - From: -9984887 To: 9982597.45
+Transfer done
+AFTER - From: -9984937 To: 9982647.45
+PASSED - before/after values correct

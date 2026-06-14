@@ -1,0 +1,14 @@
+{
+    "firstName":"Shruti",
+    "lastName":"Jaiswal",
+    "address":"ShastriNagar",
+    "city":"Bhilwara",
+    "state":"Rajasthan",
+    "zipCode":"311001",
+    "phone":"1234567890",
+    "ssn": "0987654321",
+    "password":"Test@123",
+    "transferAmount":"350",
+
+    "customerId":"12212"
+}

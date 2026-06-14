@@ -1,0 +1,6 @@
+user1781350455374
+Test@123
+Registration successful
+New Account ID: 
+Account id from API: 54321
+API status: 200

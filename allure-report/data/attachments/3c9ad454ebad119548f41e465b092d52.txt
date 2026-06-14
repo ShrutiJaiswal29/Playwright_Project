@@ -1,0 +1,5 @@
+Username: user1781352469767
+Registration successful
+New Account ID: 
+Account id from API: 19671
+API status: 200

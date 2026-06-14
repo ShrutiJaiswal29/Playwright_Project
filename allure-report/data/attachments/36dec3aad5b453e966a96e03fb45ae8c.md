@@ -1,0 +1,178 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: e2e\createAccountHybrid.spec.ts >> @e2e @smoke create account ui and validate api
+- Location: tests\e2e\createAccountHybrid.spec.ts:9:5
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator:  locator('#newAccountId')
+Expected: visible
+Received: hidden
+Timeout:  5000ms
+
+Call log:
+  - Expect "toBeVisible" with timeout 5000ms
+  - waiting for locator('#newAccountId')
+    13 × locator resolved to <a href="" id="newAccountId"></a>
+       - unexpected value "hidden"
+
+```
+
+```yaml
+- link:
+  - /url: admin.htm
+  - img
+- link "ParaBank":
+  - /url: index.htm
+  - img "ParaBank"
+- paragraph: Experience the difference
+- list:
+  - listitem: Solutions
+  - listitem:
+    - link "About Us":
+      - /url: about.htm
+  - listitem:
+    - link "Services":
+      - /url: services.htm
+  - listitem:
+    - link "Products":
+      - /url: http://www.parasoft.com/jsp/products.jsp
+  - listitem:
+    - link "Locations":
+      - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+  - listitem:
+    - link "Admin Page":
+      - /url: admin.htm
+- list:
+  - listitem:
+    - link "home":
+      - /url: index.htm
+  - listitem:
+    - link "about":
+      - /url: about.htm
+  - listitem:
+    - link "contact":
+      - /url: contact.htm
+- paragraph: Welcome Shruti Jaiswal
+- heading "Account Services" [level=2]
+- list:
+  - listitem:
+    - link "Open New Account":
+      - /url: openaccount.htm
+  - listitem:
+    - link "Accounts Overview":
+      - /url: overview.htm
+  - listitem:
+    - link "Transfer Funds":
+      - /url: transfer.htm
+  - listitem:
+    - link "Bill Pay":
+      - /url: billpay.htm
+  - listitem:
+    - link "Find Transactions":
+      - /url: findtrans.htm
+  - listitem:
+    - link "Update Contact Info":
+      - /url: updateprofile.htm
+  - listitem:
+    - link "Request Loan":
+      - /url: requestloan.htm
+  - listitem:
+    - link "Log Out":
+      - /url: logout.htm
+- heading "Open New Account" [level=1]
+- paragraph: What type of Account would you like to open?
+- combobox:
+  - option "CHECKING" [selected]
+  - option "SAVINGS"
+- paragraph: A minimum of $100.00 must be deposited into this account at time of opening. Please choose an existing account to transfer funds into the new account.
+- combobox:
+  - option "55413" [selected]
+- button "Open New Account"
+- list:
+  - listitem:
+    - link "Home":
+      - /url: index.htm
+    - text: "|"
+  - listitem:
+    - link "About Us":
+      - /url: about.htm
+    - text: "|"
+  - listitem:
+    - link "Services":
+      - /url: services.htm
+    - text: "|"
+  - listitem:
+    - link "Products":
+      - /url: http://www.parasoft.com/jsp/products.jsp
+    - text: "|"
+  - listitem:
+    - link "Locations":
+      - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+    - text: "|"
+  - listitem:
+    - link "Forum":
+      - /url: http://forums.parasoft.com/
+    - text: "|"
+  - listitem:
+    - link "Site Map":
+      - /url: sitemap.htm
+    - text: "|"
+  - listitem:
+    - link "Contact Us":
+      - /url: contact.htm
+- paragraph: © Parasoft. All rights reserved.
+- list:
+  - listitem: "Visit us at:"
+  - listitem:
+    - link "www.parasoft.com":
+      - /url: http://www.parasoft.com/
+```
+
+# Test source
+
+```ts
+  1  | import {expect,Page} from '@playwright/test'
+  2  | 
+  3  | export class OpenAccountPage{
+  4  |     constructor(page:Page){
+  5  |         this.page=page
+  6  |         this.openAccountLink='text=Open New Account'
+  7  |         this.accountType='#type'
+  8  |         this.submitButton='input[value="Open New Account"]'
+  9  |         this.newAccountId='#newAccountId'
+  10 |     }
+  11 | 
+  12 |     async openAccount(){
+  13 |         await this.page.locator(this.openAccountLink).click()
+  14 | 
+  15 |     }
+  16 | 
+  17 |     async createAccount(){ 
+  18 |         await this.page.locator(this.accountType).waitFor()
+  19 |         await this.page.locator(this.accountType).selectOption('CHECKING')
+  20 |         await this.page.locator(this.submitButton).click()
+> 21 |         await expect(this.page.locator(this.newAccountId)).toBeVisible()
+     |                                                            ^ Error: expect(locator).toBeVisible() failed
+  22 |         const newId= await this.page.locator(this.newAccountId).innerText()
+  23 |         console.log('New Account ID:',newId);
+  24 |         return newId
+  25 |     }
+  26 | 
+  27 |     async validateAccount(){
+  28 |       await expect(this.page).toHaveURL(/openaccount\.htm/)
+  29 |       await this.apge.screenshot({path:
+  30 |         'screenshots/openAccount/openAccount.png'
+  31 |       })
+  32 |     }
+  33 | }
+```

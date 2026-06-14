@@ -1,0 +1,6 @@
+Accounts: [
+  { id: 13344, customerId: 12212, type: 'CHECKING', balance: 4739.93 },
+  { id: 13899, customerId: 12212, type: 'SAVINGS', balance: 150 },
+  { id: 15786, customerId: 12212, type: 'SAVINGS', balance: 100 }
+]
+Total accounts: 3

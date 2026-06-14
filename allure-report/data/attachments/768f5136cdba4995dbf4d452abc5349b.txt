@@ -1,0 +1,3 @@
+Status: 200
+Response: { id: 12456, customerId: 12212, type: 'CHECKING', balance: 9982597.45 }
+Balance: 9982597.45
