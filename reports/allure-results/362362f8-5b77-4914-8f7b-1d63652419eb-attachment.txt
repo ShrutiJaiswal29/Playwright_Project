@@ -1,0 +1,10 @@
+Username: user1781522303109
+Registration successful
+New Account ID: 
+New Account ID: 
+Total accounts in dropdown: 1
+From: 25776 To: 25776
+Before - from: 5000 To: 5000
+Transfer Complete!
+After - from: 5000 To: 5000
+HYBRID TRANSFER PASSED - total balance consistent

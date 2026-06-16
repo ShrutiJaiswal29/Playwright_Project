@@ -1,0 +1,4 @@
+BEFORE - From: 2572.93 To: 350
+Transfer done
+AFTER - From: 2522.93 To: 400
+PASSED - before/after values correct

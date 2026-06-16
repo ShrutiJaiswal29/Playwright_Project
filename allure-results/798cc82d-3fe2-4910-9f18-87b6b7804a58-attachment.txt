@@ -1,0 +1,6 @@
+Username: user1781550404840
+Registration successful
+New Account ID: 
+From Account: 33324
+To Account: 33324
+Transfer Complete!

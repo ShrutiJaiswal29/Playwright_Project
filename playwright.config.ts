@@ -24,15 +24,16 @@ export default defineConfig({
  // workers: process.env.CI ? 1 : 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['html'],
-    ['json',{outputFile:'test-results/results.json'}],
+    ['html',{outputFolder:'playwright-report'}],
+    ['json',{outputFile:'reports/results.json'}],
     ['allure-playwright',{
     outputFolder:'allure-results'}]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
+    baseURL: 'https://parabank.parasoft.com',
+
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     screenshot:'only-on-failure',
@@ -51,13 +52,15 @@ export default defineConfig({
 
     {
       name: 'firefox',
-      testDir:'tests/ui',
+      testDir:'./tests/ui',
       use: { ...devices['Desktop Firefox'] },
     },
     {
       name:'api',
       testDir:'./tests/api',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        baseURL:'https://parabank.parasoft.com',
+      },
     },
 {
      name:'e2e',
@@ -67,8 +70,10 @@ export default defineConfig({
 
     {
       name: 'performance-lite',
-      testDir:'./tests/performancee-lite',
-      use: { ...devices['Desktop Safari'] },
+      testDir:'./tests/performance-lite',
+      use: { 
+        baseURL:'https://parabank.parasoft.com',
+       },
     },
 
     /* Test against mobile viewports. */

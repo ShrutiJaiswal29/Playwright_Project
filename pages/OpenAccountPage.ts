@@ -3,14 +3,14 @@ import {expect, Page} from '@playwright/test'
 export class OpenAccountPage{
     constructor(page: Page){
         this.page = page
-        this.openAccountLink = 'a[href="openaccount.htm"]'
+        // this.openAccountLink = 'a[href="openaccount.htm"]'
         this.accountType = '#type'
         this.submitButton = 'input[value="Open New Account"]'
         this.newAccountId = '#newAccountId'
     }
 
     async openAccount(){
-        await this.page.locator(this.openAccountLink).click()
+        await this.page.getByRole('link',{name:'Open New Account'}).click()
     }
 
     async createAccount(type = 'CHECKING'){

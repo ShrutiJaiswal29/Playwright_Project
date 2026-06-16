@@ -1,0 +1,3 @@
+Status: 200
+Response: { id: 13344, customerId: 12212, type: 'SAVINGS', balance: -68.9 }
+Balance: -68.9

@@ -17,8 +17,7 @@ export class RegisterPage{
     }
 
     async openRegisterPage(){
-        await this.page.goto('https://parabank.parasoft.com/')
-        await this.page.getByRole('link', {name: 'Register'}).click()
+        await this.page.goto('/parabank/register.htm')
     }
 
     async fillDetails(userData){
@@ -44,7 +43,8 @@ export class RegisterPage{
     }
 
     async validateRegistration(){
-        await expect(this.page.locator('h1.title')).toBeVisible({timeout: 15000})
+        await expect(this.page.locator('h1.title')).toBeVisible()
+        await expect(this.page.getByRole('link',{name:'open new account'})).toBeVisible()
         console.log('Registration successful')
         await this.page.screenshot({path: 'screenshots/register/register.png'})
     }

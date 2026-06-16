@@ -25,3 +25,24 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+
+    -uses: actions/upload-artifact@v4
+    if:${{!cancelled()}}
+    with:
+    name:allure-report
+    path:allure-report/
+    retention-days:30
+
+    -uses:actions/upload-artifact@v4
+    if:${{cancelled()}}
+    with:
+    name:screenshots
+    path:screenshots/
+    retention-days:30
+
+    -uses: actions/upload-artifact@v4
+    if:${{cancelled()}}
+    with:
+    name:failure-analysis
+    path:failure-analysis-report.html
+    retention-days:30

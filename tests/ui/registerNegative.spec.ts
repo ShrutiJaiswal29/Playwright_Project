@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 test('@regression register with blank fields',async({page})=>{
-    await page.goto('https://parabank.parasoft.com/')
+    await page.goto('/parabank/index.htm')
     await page.getByRole('link',{name:'Register'}).click()
     
     await page.getByRole('button',{name:'Register'}).click()

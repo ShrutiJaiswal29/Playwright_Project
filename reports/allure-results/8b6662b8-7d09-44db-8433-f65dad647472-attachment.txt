@@ -1,0 +1,15 @@
+Accounts: [
+  { id: 13344, customerId: 12212, type: 'CHECKING', balance: 4172.93 },
+  { id: 15564, customerId: 12212, type: 'SAVINGS', balance: 50 },
+  { id: 15786, customerId: 12212, type: 'SAVINGS', balance: 0 },
+  { id: 18672, customerId: 12212, type: 'CHECKING', balance: 0 },
+  { id: 18783, customerId: 12212, type: 'CHECKING', balance: 100 },
+  { id: 19005, customerId: 12212, type: 'LOAN', balance: 1000 },
+  { id: 21003, customerId: 12212, type: 'CHECKING', balance: 100 },
+  { id: 21669, customerId: 12212, type: 'CHECKING', balance: 100 },
+  { id: 22335, customerId: 12212, type: 'LOAN', balance: 1000 },
+  { id: 23223, customerId: 12212, type: 'CHECKING', balance: 100 },
+  { id: 23556, customerId: 12212, type: 'CHECKING', balance: 100 },
+  { id: 23667, customerId: 12212, type: 'LOAN', balance: 1000 }
+]
+Total accounts: 12

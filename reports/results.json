@@ -1,0 +1,3220 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\playwright.config.ts",
+    "rootDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/tests",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "http://localhost:8080/job/Playwright_Project/13/"
+      },
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "http://localhost:8080/job/Playwright_Project/13/"
+          },
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "http://localhost:8080/job/Playwright_Project/13/"
+          },
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/tests/ui",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "http://localhost:8080/job/Playwright_Project/13/"
+          },
+          "actualWorkers": 2
+        },
+        "id": "api",
+        "name": "api",
+        "testDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/tests/api",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "http://localhost:8080/job/Playwright_Project/13/"
+          },
+          "actualWorkers": 2
+        },
+        "id": "e2e",
+        "name": "e2e",
+        "testDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "ci": {
+            "commitHref": "http://localhost:8080/job/Playwright_Project/13/"
+          },
+          "actualWorkers": 2
+        },
+        "id": "performance-lite",
+        "name": "performance-lite",
+        "testDir": "C:/Users/shrut/OneDrive/Desktop/Playwright_Project/tests/performance-lite",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ],
+      [
+        "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ui\\accountsOverview.spec.ts",
+      "file": "ui/accountsOverview.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@regression accounts Overview",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31893,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:19:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:13:53.198Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 33494,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:19:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:14:29.280Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31620,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:19:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:15:05.951Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e14f94278aa3703df749-7407f9e970892ec3dd5c",
+          "file": "ui/accountsOverview.spec.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "@regression accounts Overview",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 24,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 23427,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:18:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:18:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:20:43.556Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                },
+                {
+                  "workerIndex": 26,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 23902,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:18:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:18:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:21:10.232Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                },
+                {
+                  "workerIndex": 28,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 21101,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:18:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\accountsOverview.spec.ts:18:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:21:36.766Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\accountsOverview--regression-accounts-Overview-firefox-retry2\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e14f94278aa3703df749-6288e5f63eae8543a204",
+          "file": "ui/accountsOverview.spec.ts",
+          "line": 13,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ui\\login.spec.ts",
+      "file": "ui/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@smoke login with valid credentials",
+          "ok": false,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31912,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 42,
+                        "line": 14
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"]')\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:14\n\n  12 |\n  13 | async login(username:string,password:string){\n> 14 |   await this.page.locator(this.username).fill(username)\n     |                                          ^\n  15 |   await this.page.locator(this.password).fill(password)\n  16 |   await this.page.getByRole('button',{name:'Log In'}).click()\n  17 | }\n    at LoginPage.login (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:14:42)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:7:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:13:53.211Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 33217,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 42,
+                        "line": 14
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"]')\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:14\n\n  12 |\n  13 | async login(username:string,password:string){\n> 14 |   await this.page.locator(this.username).fill(username)\n     |                                          ^\n  15 |   await this.page.locator(this.password).fill(password)\n  16 |   await this.page.getByRole('button',{name:'Log In'}).click()\n  17 | }\n    at LoginPage.login (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:14:42)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:7:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:14:28.992Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31375,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 42,
+                        "line": 14
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"]')\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:14\n\n  12 |\n  13 | async login(username:string,password:string){\n> 14 |   await this.page.locator(this.username).fill(username)\n     |                                          ^\n  15 |   await this.page.locator(this.password).fill(password)\n  16 |   await this.page.getByRole('button',{name:'Log In'}).click()\n  17 | }\n    at LoginPage.login (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:14:42)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:7:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:15:05.343Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-b089d3e10c86b4e45b5a",
+          "file": "ui/login.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "@regression login with wrong password shows error",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 32274,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 42,
+                        "line": 14
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"]')\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:14\n\n  12 |\n  13 | async login(username:string,password:string){\n> 14 |   await this.page.locator(this.username).fill(username)\n     |                                          ^\n  15 |   await this.page.locator(this.password).fill(password)\n  16 |   await this.page.getByRole('button',{name:'Log In'}).click()\n  17 | }\n    at LoginPage.login (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:14:42)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:14:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:15:38.960Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31939,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 42,
+                        "line": 14
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"]')\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:14\n\n  12 |\n  13 | async login(username:string,password:string){\n> 14 |   await this.page.locator(this.username).fill(username)\n     |                                          ^\n  15 |   await this.page.locator(this.password).fill(password)\n  16 |   await this.page.getByRole('button',{name:'Log In'}).click()\n  17 | }\n    at LoginPage.login (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:14:42)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:14:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:16:14.053Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31970,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 42,
+                        "line": 14
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"username\"]')\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:14\n\n  12 |\n  13 | async login(username:string,password:string){\n> 14 |   await this.page.locator(this.username).fill(username)\n     |                                          ^\n  15 |   await this.page.locator(this.password).fill(password)\n  16 |   await this.page.getByRole('button',{name:'Log In'}).click()\n  17 | }\n    at LoginPage.login (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:14:42)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:14:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:16:48.338Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-573947c66898873c481b",
+          "file": "ui/login.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "@smoke login with valid credentials",
+          "ok": false,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 25,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 24708,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:6:17",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                      "column": 19,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m openLogin(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://parabank.parasoft.com/'\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39mstring\u001b[33m,\u001b[39mpassword\u001b[33m:\u001b[39mstring){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 19,
+                        "line": 10
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:10\n\n   8 |\n   9 | async openLogin(){\n> 10 |   await this.page.goto('https://parabank.parasoft.com/')\n     |                   ^\n  11 | }\n  12 |\n  13 | async login(username:string,password:string){\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:6:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:20:43.683Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                    "column": 19,
+                    "line": 10
+                  }
+                },
+                {
+                  "workerIndex": 27,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 22028,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:6:17",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                      "column": 19,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m openLogin(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://parabank.parasoft.com/'\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39mstring\u001b[33m,\u001b[39mpassword\u001b[33m:\u001b[39mstring){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 19,
+                        "line": 10
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:10\n\n   8 |\n   9 | async openLogin(){\n> 10 |   await this.page.goto('https://parabank.parasoft.com/')\n     |                   ^\n  11 | }\n  12 |\n  13 | async login(username:string,password:string){\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:6:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:21:13.397Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                    "column": 19,
+                    "line": 10
+                  }
+                },
+                {
+                  "workerIndex": 29,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 21612,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:6:17",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                      "column": 19,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m openLogin(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://parabank.parasoft.com/'\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39mstring\u001b[33m,\u001b[39mpassword\u001b[33m:\u001b[39mstring){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 19,
+                        "line": 10
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:10\n\n   8 |\n   9 | async openLogin(){\n> 10 |   await this.page.goto('https://parabank.parasoft.com/')\n     |                   ^\n  11 | }\n  12 |\n  13 | async login(username:string,password:string){\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:6:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:21:40.851Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--smoke-login-with-valid-credentials-firefox-retry2\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                    "column": 19,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-b36ce70eda88a7937377",
+          "file": "ui/login.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "@regression login with wrong password shows error",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 30,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 21685,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:13:17",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                      "column": 19,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m openLogin(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://parabank.parasoft.com/'\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39mstring\u001b[33m,\u001b[39mpassword\u001b[33m:\u001b[39mstring){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 19,
+                        "line": 10
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:10\n\n   8 |\n   9 | async openLogin(){\n> 10 |   await this.page.goto('https://parabank.parasoft.com/')\n     |                   ^\n  11 | }\n  12 |\n  13 | async login(username:string,password:string){\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:13:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:22:00.497Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                    "column": 19,
+                    "line": 10
+                  }
+                },
+                {
+                  "workerIndex": 32,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 21513,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:13:17",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                      "column": 19,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m openLogin(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://parabank.parasoft.com/'\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39mstring\u001b[33m,\u001b[39mpassword\u001b[33m:\u001b[39mstring){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 19,
+                        "line": 10
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:10\n\n   8 |\n   9 | async openLogin(){\n> 10 |   await this.page.goto('https://parabank.parasoft.com/')\n     |                   ^\n  11 | }\n  12 |\n  13 | async login(username:string,password:string){\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:13:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:22:24.274Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                    "column": 19,
+                    "line": 10
+                  }
+                },
+                {
+                  "workerIndex": 34,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 21278,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:13:17",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                      "column": 19,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36masync\u001b[39m openLogin(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://parabank.parasoft.com/'\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36masync\u001b[39m login(username\u001b[33m:\u001b[39mstring\u001b[33m,\u001b[39mpassword\u001b[33m:\u001b[39mstring){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                        "column": 19,
+                        "line": 10
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\LoginPage.ts:10\n\n   8 |\n   9 | async openLogin(){\n> 10 |   await this.page.goto('https://parabank.parasoft.com/')\n     |                   ^\n  11 | }\n  12 |\n  13 | async login(username:string,password:string){\n    at LoginPage.openLogin (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts:10:19)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\login.spec.ts:13:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:22:48.158Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\login--regression-login-with-wrong-password-shows-error-firefox-retry2\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\LoginPage.ts",
+                    "column": 19,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-d53386b3f8ca93ab3c76",
+          "file": "ui/login.spec.ts",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ui\\negativeTransfer.spec.ts",
+      "file": "ui/negativeTransfer.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@regression transfer with blank fields",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32384,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:23:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:15:39.307Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31915,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:23:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:16:13.950Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31977,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:23:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:16:48.143Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "587e44f8d892af0794da-71767b0ff7b265d1260f",
+          "file": "ui/negativeTransfer.spec.ts",
+          "line": 16,
+          "column": 5
+        },
+        {
+          "title": "@regression transfer with blank fields",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 31,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 21883,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:21:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:21:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:22:04.791Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                },
+                {
+                  "workerIndex": 33,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 21915,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:21:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:21:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:22:28.867Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                },
+                {
+                  "workerIndex": 35,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 21628,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:21:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\negativeTransfer.spec.ts:21:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:22:53.178Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\negativeTransfer--regression-transfer-with-blank-fields-firefox-retry2\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "587e44f8d892af0794da-2ba0599075f1be2f2f4d",
+          "file": "ui/negativeTransfer.spec.ts",
+          "line": 16,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ui\\openAccountPage.spec.ts",
+      "file": "ui/openAccountPage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@smoke @regression create account",
+          "ok": false,
+          "tags": [
+            "smoke",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31549,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\openAccountPage.spec.ts:13:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:17:22.175Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31526,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\openAccountPage.spec.ts:13:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:17:55.218Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31408,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\openAccountPage.spec.ts:13:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:18:28.340Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e9c389ac6bac580da614-1bfe9f8093c127d9443a",
+          "file": "ui/openAccountPage.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "@smoke @regression create account",
+          "ok": true,
+          "tags": [
+            "smoke",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 36,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 21817,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\openAccountPage.spec.ts:12:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\openAccountPage.spec.ts:12:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:23:11.545Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                },
+                {
+                  "workerIndex": 38,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22359,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\openAccountPage.spec.ts:12:20",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\openAccountPage.spec.ts:12:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:23:36.458Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-firefox-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-firefox-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-firefox-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\openAccountPage--smoke-regression-create-account-firefox-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                },
+                {
+                  "workerIndex": 40,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7566,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Username: user1781551442344\n"
+                    },
+                    {
+                      "text": "Registration successful\n"
+                    },
+                    {
+                      "text": "New Account ID: \n"
+                    },
+                    {
+                      "text": "Account created with ID: \n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:24:02.366Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "e9c389ac6bac580da614-4a89ccdfe46644495fee",
+          "file": "ui/openAccountPage.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ui\\register.spec.ts",
+      "file": "ui/register.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@smoke register user",
+          "ok": false,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31492,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\register.spec.ts:11:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:17:22.184Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31518,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\register.spec.ts:11:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:17:55.240Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31466,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\register.spec.ts:11:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:18:28.347Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ab6fb19b790d2390d751-5dc07e4a3b3e55dc3751",
+          "file": "ui/register.spec.ts",
+          "line": 7,
+          "column": 5
+        },
+        {
+          "title": "@smoke register user",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 37,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 22668,
+                  "error": {
+                    "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n",
+                    "stack": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\register.spec.ts:10:17",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                      "column": 25,
+                      "line": 20
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\RegisterPage.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36masync\u001b[39m openRegisterPage(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/parabank/register.htm'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[36masync\u001b[39m fillDetails(userData){\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 25,
+                        "line": 20
+                      },
+                      "message": "Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/register.htm\", waiting until \"load\"\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:20\n\n  18 |\n  19 |     async openRegisterPage(){\n> 20 |         await this.page.goto('/parabank/register.htm')\n     |                         ^\n  21 |     }\n  22 |\n  23 |     async fillDetails(userData){\n    at RegisterPage.openRegisterPage (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:20:25)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\register.spec.ts:10:17"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:23:17.130Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                    "column": 25,
+                    "line": 20
+                  }
+                },
+                {
+                  "workerIndex": 39,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 18970,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Username: user1781551422286\n"
+                    },
+                    {
+                      "text": "Registration successful\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:23:42.296Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\register--smoke-register-user-firefox-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "ab6fb19b790d2390d751-f6b29cbc13cbc911bab1",
+          "file": "ui/register.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ui\\registerNegative.spec.ts",
+      "file": "ui/registerNegative.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@regression register with blank fields",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31508,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\registerNegative.spec.ts",
+                        "column": 52,
+                        "line": 4
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Register' })\u001b[22m\n\n\n  2 | test('@regression register with blank fields',async({page})=>{\n  3 |     await page.goto('/parabank/index.htm')\n> 4 |     await page.getByRole('link',{name:'Register'}).click()\n    |                                                    ^\n  5 |     \n  6 |     await page.getByRole('button',{name:'Register'}).click()\n  7 |\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\registerNegative.spec.ts:4:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:19:01.236Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32450,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\registerNegative.spec.ts",
+                        "column": 52,
+                        "line": 4
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Register' })\u001b[22m\n\n\n  2 | test('@regression register with blank fields',async({page})=>{\n  3 |     await page.goto('/parabank/index.htm')\n> 4 |     await page.getByRole('link',{name:'Register'}).click()\n    |                                                    ^\n  5 |     \n  6 |     await page.getByRole('button',{name:'Register'}).click()\n  7 |\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\registerNegative.spec.ts:4:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:19:34.575Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31816,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\registerNegative.spec.ts",
+                        "column": 52,
+                        "line": 4
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Register' })\u001b[22m\n\n\n  2 | test('@regression register with blank fields',async({page})=>{\n  3 |     await page.goto('/parabank/index.htm')\n> 4 |     await page.getByRole('link',{name:'Register'}).click()\n    |                                                    ^\n  5 |     \n  6 |     await page.getByRole('button',{name:'Register'}).click()\n  7 |\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\registerNegative.spec.ts:4:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:20:09.154Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\registerNegative--regression-register-with-blank-fields-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "90f1c7d4574abb8711a7-3bba8db2d24170725435",
+          "file": "ui/registerNegative.spec.ts",
+          "line": 2,
+          "column": 5
+        },
+        {
+          "title": "@regression register with blank fields",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 39,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4564,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "validation errors shown correctly\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:02.284Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "90f1c7d4574abb8711a7-10b32b84285219638ee9",
+          "file": "ui/registerNegative.spec.ts",
+          "line": 2,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ui\\transferFunds.spec.ts",
+      "file": "ui/transferFunds.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@smoke transfer funds",
+          "ok": false,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31488,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\transferFunds.spec.ts:18:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:19:01.365Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 32556,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\transferFunds.spec.ts:18:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-15T19:19:34.726Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 23,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31915,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts",
+                        "column": 49,
+                        "line": 24
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#customer\\\\.firstName')\u001b[22m\n\n\n   at ..\\pages\\RegisterPage.ts:24\n\n  22 |\n  23 |     async fillDetails(userData){\n> 24 |         await this.page.locator(this.firstName).fill(userData.firstName)\n     |                                                 ^\n  25 |         await this.page.locator(this.lastName).fill(userData.lastName)\n  26 |         await this.page.locator(this.address).fill(userData.address)\n  27 |         await this.page.locator(this.city).fill(userData.city)\n    at RegisterPage.fillDetails (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\RegisterPage.ts:24:49)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\transferFunds.spec.ts:18:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2026-06-15T19:20:09.183Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium-retry2\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium-retry2\\error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f18fe70319761714dc29-57abd543c1c3a5916b4e",
+          "file": "ui/transferFunds.spec.ts",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "@smoke transfer funds",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 39,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8177,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Username: user1781551446929\n"
+                    },
+                    {
+                      "text": "Registration successful\n"
+                    },
+                    {
+                      "text": "New Account ID: \n"
+                    },
+                    {
+                      "text": "From Account: 34656\n"
+                    },
+                    {
+                      "text": "To Account: 34656\n"
+                    },
+                    {
+                      "text": "Transfer Complete!\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:06.931Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f18fe70319761714dc29-b403d15c93200597e336",
+          "file": "ui/transferFunds.spec.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "api\\accountAPI.spec.ts",
+      "file": "api/accountAPI.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@api get accounts list",
+          "ok": true,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 41,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 639,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response: <?xml version=\"1.0\" encoding=\"UTF-8\"?><accounts><account><id>12345</id><customerId>12212</customerId><type>CHECKING</type><balance>-3430.00</balance></account><account><id>12456</id><customerId>12212</customerId><type>CHECKING</type><balance>-50.00</balance></account><account><id>12567</id><customerId>12212</customerId><type>CHECKING</type><balance>160.45</balance></account><account><id>12678</id><customerId>12212</customerId><type>SAVINGS</type><balance>-120.00</balance></account><account><id>12789</id><customerId>12212</customerId><type>CHECKING</type><balance>85.00</balance></account><account><id>12900</id><customerId>12212</customerId><type>CHECKING</type><balance>-100.00</balance></account><account><id>13011</id><customerId>12212</customerId><type>CHECKING</type><balance>80.00</balance></account><account><id>13122</id><customerId>12212</customerId><type>CHECKING</type><balance>1000.00</balance></account><account><id>13233</id><customerId>12212</customerId><type>CHECKING</type><balance>100.00</balance></account><account><id>13344</id><customerId>12212</customerId><type>SAVINGS</type><balance>1231.10</balance></account><account><id>14121</id><customerId>12212</customerId><type>LOAN</type><balance>980.00</balance></account><account><id>16119</id><customerId>12212</customerId><type>CHECKING</type><balance>100.00</balance></account><account><id>16341</id><customerId>12212</customerId><type>SAVINGS</type><balance>100.00</balance></account><account><id>16452</id><customerId>12212</customerId><type>CHECKING</type><balance>100.00</balance></account><account><id>16563</id><customerId>12212</customerId><type>SAVINGS</type><balance>110.00</balance></account><account><id>16674</id><customerId>12212</customerId><type>SAVINGS</type><balance>100.00</balance></account><account><id>16785</id><customerId>12212</customerId><type>LOAN</type><balance>1000.00</balance></account><account><id>17007</id><customerId>12212</customerId><type>LOAN</type><balance>1000.00</balance></account><account><id>17118</id><customerId>12212</customerId><type>LOAN</type><balance>1000.00</balance></account><account><id>17229</id><customerId>12212</customerId><type>LOAN</type><balance>1000.00</balance></account><account><id>21891</id><customerId>12212</customerId><type>CHECKING</type><balance>100.00</balance></account><account><id>25776</id><customerId>12212</customerId><type>CHECKING</type><balance>100.00</balance></account><account><id>26553</id><customerId>12212</customerId><type>CHECKING</type><balance>100.00</balance></account><account><id>27219</id><customerId>12212</customerId><type>CHECKING</type><balance>100.00</balance></account><account><id>28440</id><customerId>12212</customerId><type>SAVINGS</type><balance>100.00</balance></account><account><id>54321</id><customerId>12212</customerId><type>CHECKING</type><balance>1351.12</balance></account></accounts>\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:12.903Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b3afe6cbc379d6636c4a-d68198a9ac350fb1a78b",
+          "file": "api/accountAPI.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "api\\accountDetailsAPI.spec.ts",
+      "file": "api/accountDetailsAPI.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@api  @regression validate account details",
+          "ok": true,
+          "tags": [
+            "api",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 41,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 801,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Account ID: \u001b[33m12345\u001b[39m\n"
+                    },
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Account details: { id: \u001b[33m12345\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m-3430\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Balance is numeric: \u001b[33m-3430\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:13.638Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f12339eca48dacad8e46-6f35af1d4d6c3b49eb0f",
+          "file": "api/accountDetailsAPI.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "api\\balanceValidationAPI.spec.ts",
+      "file": "api/balanceValidationAPI.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@api @regression balance is numeric",
+          "ok": true,
+          "tags": [
+            "api",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 41,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 356,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "Response: { id: \u001b[33m13344\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'SAVINGS'\u001b[39m, balance: \u001b[33m1231.1\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Balance: \u001b[33m1231.1\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:14.475Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4ef24b045f32ba0c1457-1d37ead4a368f942e30e",
+          "file": "api/balanceValidationAPI.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "api\\loginAPI.spec.ts",
+      "file": "api/loginAPI.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@api validate login api",
+          "ok": true,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 41,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 323,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Status: \u001b[33m200\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:14.859Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "381dfad7984b02f53ac1-5e3e9fc0d5181ce49cc7",
+          "file": "api/loginAPI.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "api\\transferValidationAPI.spec.ts",
+      "file": "api/transferValidationAPI.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@api @regression validating transfer occurred correctly",
+          "ok": true,
+          "tags": [
+            "api",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 43,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3171,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "BEFORE - From: \u001b[33m-3430\u001b[39m To: \u001b[33m-50\u001b[39m\n"
+                    },
+                    {
+                      "text": "Transfer done\n"
+                    },
+                    {
+                      "text": "AFTER - From: \u001b[33m-3480\u001b[39m To: \u001b[33m0\u001b[39m\n"
+                    },
+                    {
+                      "text": "PASSED - before/after values correct\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:16.958Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "60b24eb624388344c9db-7fb17943877b41e62ae4",
+          "file": "api/transferValidationAPI.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "api\\validateAccountAPI.spec.ts",
+      "file": "api/validateAccountAPI.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@api validate account exists",
+          "ok": true,
+          "tags": [
+            "api"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "api",
+              "projectName": "api",
+              "results": [
+                {
+                  "workerIndex": 41,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 367,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Accounts: [\n  { id: \u001b[33m12345\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m-3430\u001b[39m },\n  { id: \u001b[33m12456\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m-50\u001b[39m },\n  { id: \u001b[33m12567\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m160.45\u001b[39m },\n  { id: \u001b[33m12678\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'SAVINGS'\u001b[39m, balance: \u001b[33m-120\u001b[39m },\n  { id: \u001b[33m12789\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m85\u001b[39m },\n  { id: \u001b[33m12900\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m-100\u001b[39m },\n  { id: \u001b[33m13011\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m80\u001b[39m },\n  { id: \u001b[33m13122\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m1000\u001b[39m },\n  { id: \u001b[33m13233\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m13344\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'SAVINGS'\u001b[39m, balance: \u001b[33m1231.1\u001b[39m },\n  { id: \u001b[33m14121\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'LOAN'\u001b[39m, balance: \u001b[33m980\u001b[39m },\n  { id: \u001b[33m16119\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m16341\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'SAVINGS'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m16452\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m16563\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'SAVINGS'\u001b[39m, balance: \u001b[33m110\u001b[39m },\n  { id: \u001b[33m16674\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'SAVINGS'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m16785\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'LOAN'\u001b[39m, balance: \u001b[33m1000\u001b[39m },\n  { id: \u001b[33m17007\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'LOAN'\u001b[39m, balance: \u001b[33m1000\u001b[39m },\n  { id: \u001b[33m17118\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'LOAN'\u001b[39m, balance: \u001b[33m1000\u001b[39m },\n  { id: \u001b[33m17229\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'LOAN'\u001b[39m, balance: \u001b[33m1000\u001b[39m },\n  { id: \u001b[33m21891\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m25776\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m26553\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m27219\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m28440\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'SAVINGS'\u001b[39m, balance: \u001b[33m100\u001b[39m },\n  { id: \u001b[33m54321\u001b[39m, customerId: \u001b[33m12212\u001b[39m, type: \u001b[32m'CHECKING'\u001b[39m, balance: \u001b[33m1351.12\u001b[39m }\n]\n"
+                    },
+                    {
+                      "text": "Total accounts: \u001b[33m26\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:15.204Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5ec64c9656173e513da7-1df6b324628e38c91b11",
+          "file": "api/validateAccountAPI.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "e2e\\createAccountHybrid.spec.ts",
+      "file": "e2e/createAccountHybrid.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@e2e @smoke create account ui and validate api",
+          "ok": true,
+          "tags": [
+            "e2e",
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 42,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7113,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Username: user1781551456521\n"
+                    },
+                    {
+                      "text": "Registration successful\n"
+                    },
+                    {
+                      "text": "New Account ID: \n"
+                    },
+                    {
+                      "text": "Account id from API: 54321\n"
+                    },
+                    {
+                      "text": "API status: \u001b[33m200\u001b[39m\n"
+                    },
+                    {
+                      "text": "HYBRID TEST PASSED - type: CHECKING\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:16.533Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "119f654e04ba74aadb00-e282bca4cdf8e1a6337a",
+          "file": "e2e/createAccountHybrid.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "e2e\\transferHybrid.spec.ts",
+      "file": "e2e/transferHybrid.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@e2e @regression transfer via UI then validate balance via API",
+          "ok": true,
+          "tags": [
+            "e2e",
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "e2e",
+              "projectName": "e2e",
+              "results": [
+                {
+                  "workerIndex": 44,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10913,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Username: user1781551461025\n"
+                    },
+                    {
+                      "text": "Registration successful\n"
+                    },
+                    {
+                      "text": "New Account ID: \n"
+                    },
+                    {
+                      "text": "New Account ID: \n"
+                    },
+                    {
+                      "text": "Total accounts in dropdown: \u001b[33m1\u001b[39m\n"
+                    },
+                    {
+                      "text": "From: 34878 To: 34878\n"
+                    },
+                    {
+                      "text": "Before - from: \u001b[33m515.5\u001b[39m To: \u001b[33m515.5\u001b[39m\n"
+                    },
+                    {
+                      "text": "Transfer Complete!\n"
+                    },
+                    {
+                      "text": "After - from: \u001b[33m515.5\u001b[39m To: \u001b[33m515.5\u001b[39m\n"
+                    },
+                    {
+                      "text": "HYBRID TRANSFER PASSED - total balance consistent\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:21.036Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "95d701edfd69a609d730-f638a6bc2c80b12ae48b",
+          "file": "e2e/transferHybrid.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "performance-lite\\performance.spec.ts",
+      "file": "performance-lite/performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@regression page load time check",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance-lite",
+              "projectName": "performance-lite",
+              "results": [
+                {
+                  "workerIndex": 45,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2253,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Page load time: \u001b[33m1804\u001b[39m ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:25.413Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-01f18d19f2b877234c3d",
+          "file": "performance-lite/performance.spec.ts",
+          "line": 6,
+          "column": 5
+        },
+        {
+          "title": "@regression API response must be under 2 seconds",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance-lite",
+              "projectName": "performance-lite",
+              "results": [
+                {
+                  "workerIndex": 45,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 646,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "API response time: \u001b[33m602\u001b[39m ms\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:27.864Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-0ba2dfeb89fded555d08",
+          "file": "performance-lite/performance.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "@regression 20 concurrent calls all return 200",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "performance-lite",
+              "projectName": "performance-lite",
+              "results": [
+                {
+                  "workerIndex": 45,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 906,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "20 calls done in: \u001b[33m766\u001b[39m ms\n"
+                    },
+                    {
+                      "text": "All 20 calls returned 200\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-15T19:24:28.563Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b15d6361b2fc38288977-b7fc8729cedab6b88021",
+          "file": "performance-lite/performance.spec.ts",
+          "line": 25,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-15T19:13:52.299Z",
+    "duration": 640215.8069999999,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 2
+  }
+}

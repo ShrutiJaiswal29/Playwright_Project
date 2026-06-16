@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test'
 import userData from '../../test-data/userData.json'
 
-const baseUrl='https://parabank.parasoft.com/parabank/services/'
+const baseUrl='https://parabank.parasoft.com/parabank/services/bank'
 
 test('@regression page load time check',async({page})=>{
     await page.goto('https://parabank.parasoft.com/parabank/index.htm')
