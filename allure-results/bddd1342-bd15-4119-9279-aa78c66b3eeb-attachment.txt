@@ -1,2 +1,0 @@
-20 calls done in: 752 ms
-All 20 calls returned 200

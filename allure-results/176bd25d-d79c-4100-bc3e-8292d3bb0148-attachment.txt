@@ -1,6 +1,0 @@
-Username: user1781551456521
-Registration successful
-New Account ID: 
-Account id from API: 54321
-API status: 200
-HYBRID TEST PASSED - type: CHECKING

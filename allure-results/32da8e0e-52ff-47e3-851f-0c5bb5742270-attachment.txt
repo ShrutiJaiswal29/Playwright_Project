@@ -1,4 +1,0 @@
-Username: user1781524976181
-Registration successful
-New Account ID: 
-Negative test passed

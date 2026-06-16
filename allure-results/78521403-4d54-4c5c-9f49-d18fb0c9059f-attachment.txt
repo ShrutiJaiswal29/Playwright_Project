@@ -1,4 +1,0 @@
-BEFORE - From: -3380 To: -100
-Transfer done
-AFTER - From: -3430 To: -50
-PASSED - before/after values correct

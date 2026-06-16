@@ -1,4 +1,0 @@
-Account ID: 12345
-Status: 200
-Account details: { id: 12345, customerId: 12212, type: 'CHECKING', balance: -2310 }
-Balance is numeric: -2310
