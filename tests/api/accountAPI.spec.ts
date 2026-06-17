@@ -11,4 +11,4 @@ test('@api get accounts list',async({request,baseUrl})=>{
     console.log('Response:',body)
 
     expect(response.status()).toBe(200)
- }) 
+}) 

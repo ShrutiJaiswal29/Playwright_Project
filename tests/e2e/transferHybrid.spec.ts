@@ -1,13 +1,15 @@
-import {test, expect} from '@playwright/test'
+import {test, expect} from '../../fixtures/apiFixture'
 import {RegisterPage} from '../../pages/RegisterPage'
 import {OpenAccountPage} from '../../pages/OpenAccountPage'
 import {generateUser} from '../../utils/dataGenerator'
 
-const baseUrl = 'https://parabank.parasoft.com/parabank/services/bank'
 const user = generateUser()
 
-test('@e2e @regression transfer via UI then validate balance via API', async({page, request}) => {
-    const headers = {Accept: 'application/json'}
+test('@e2e @regression transfer via UI then validate balance via API', async({page, request,baseUrl}) => {
+    const headers={
+        Accept: 'application/json'
+    }
+    //ui transfer
     const register = new RegisterPage(page)
     const account = new OpenAccountPage(page)
 
@@ -35,6 +37,7 @@ test('@e2e @regression transfer via UI then validate balance via API', async({pa
     console.log('From:', fromId, 'To:', toId)
 
     const amount = 100
+    //api balance validation
     const fromBefore = (await (await request.get(`${baseUrl}/accounts/${fromId}`, {headers})).json()).balance
     const toBefore = (await (await request.get(`${baseUrl}/accounts/${toId}`, {headers})).json()).balance
     console.log('Before - from:', fromBefore, 'To:', toBefore)
@@ -56,5 +59,5 @@ test('@e2e @regression transfer via UI then validate balance via API', async({pa
     const totalBefore = fromBefore + toBefore
     const totalAfter = fromAfter + toAfter
     expect(totalAfter).toBe(totalBefore)
-    console.log('HYBRID TRANSFER PASSED - total balance consistent')
+    console.log('Hybrid transfer passed - total balance consistent')
 })

@@ -1,18 +1,18 @@
-import {test,expect} from '@playwright/test'
+import {test,expect} from '../../fixtures/apiFixture'
 import userData from '../../test-data/userData.json'
 
-const baseUrl='https://parabank.parasoft.com/parabank/services/bank'
-
-test('@regression page load time check',async({page})=>{
-    await page.goto('https://parabank.parasoft.com/parabank/index.htm')
+//validate ui page load performance
+test('@regression page load time check',async({page,})=>{
+    await page.goto('/parabank/index.htm')
     const loadTime= await page.evaluate(()=>{
-        return performance.timing.loadEventEnd- performance.timing.navigationStart
+        return performance.getEntriesByType('navigation')[0].duration
     })
     console.log('Page load time:',loadTime,'ms');
-    expect(loadTime).toBeLessThan(10000)
+    expect(loadTime).toBeLessThan(5000)
 })
 
-test('@regression API response must be under 2 seconds',async({request})=>{
+//validate api response
+test('@regression API response must be under 2 seconds',async({request, baseUrl})=>{
     const start=Date.now()
     const response=await request.get(`${baseUrl}/customers/${userData.customerId}/accounts`)
 
@@ -22,13 +22,13 @@ test('@regression API response must be under 2 seconds',async({request})=>{
     expect (duration).toBeLessThan(2000)  
 })
 
-test('@regression 20 concurrent calls all return 200',async({request})=>{
+//validation using parallel requests
+test('@regression 20 concurrent calls all return 200',async({request, baseUrl})=>{    
+    const start=Date.now()
     const calls=[]
     for (let i=0; i<20; i++){
         calls.push(request.get(`${baseUrl}/customers/${userData.customerId}/accounts`))
     }
-
-    const start=Date.now()
     const responses=await Promise.all(calls)
     const total=Date.now()-start
 
@@ -38,6 +38,5 @@ test('@regression 20 concurrent calls all return 200',async({request})=>{
         expect(res.status()).toBe(200)
     }
 
-    console.log('All 20 calls returned 200');
-    
+    console.log('All 20 calls returned 200');  
 })

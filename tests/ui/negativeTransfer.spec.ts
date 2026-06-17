@@ -6,12 +6,6 @@ import { generateUser } from '../../utils/dataGenerator'
 import {TransferFundsPage} from '../../pages/TransferFundsPage'
 
 const user=generateUser()
-//import { TransferFundsPage } from '../../pages/TransferFundsPage'
-//import userData from '../../test-data/userData.json'
-
-// const randomNumber=Date.now()
-// const username=`user${randomNumber}`
-// const password='Test@123'
 
 test('@regression transfer with blank fields',async({page})=>{
     const register=new RegisterPage(page)

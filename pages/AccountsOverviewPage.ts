@@ -3,8 +3,6 @@ import {expect, Page} from '@playwright/test'
 export class AccountsOverviewPage{
     constructor(page:Page){
         this.page=page
-      //  this.accountOverviewLink='text=Accounts Overview'
-
     }
 
     async openAccountsOverview(){
@@ -16,7 +14,6 @@ export class AccountsOverviewPage{
         console.log('Accounts Overview Loaded');
         await this.page.screenshot({
             path:'screenshots/accountOverview/accountOverview.png'
-        })
-        
+        })   
     }
 }

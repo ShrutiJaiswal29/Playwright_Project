@@ -7,13 +7,15 @@ constructor(page:Page){
 }
 
 async openLogin(){
-  await this.page.goto('https://parabank.parasoft.com/')
+  await this.page.goto('/')
 }
 
 async login(username:string,password:string){
+
   await this.page.locator(this.username).fill(username)
   await this.page.locator(this.password).fill(password)
   await this.page.getByRole('button',{name:'Log In'}).click()
+  
 }
 
 async validateLogin(){

@@ -19,9 +19,8 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
-  workers:2,
+  workers: process.env.CI ? 1: 2,
   /* Opt out of parallel tests on CI. */
- // workers: process.env.CI ? 1 : 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html',{outputFolder:'playwright-report'}],
@@ -33,7 +32,6 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'https://parabank.parasoft.com',
-
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     screenshot:'only-on-failure',
@@ -58,9 +56,7 @@ export default defineConfig({
     {
       name:'api',
       testDir:'./tests/api',
-      use: {
-        baseURL:'https://parabank.parasoft.com',
-      },
+
     },
 {
      name:'e2e',
@@ -71,9 +67,7 @@ export default defineConfig({
     {
       name: 'performance-lite',
       testDir:'./tests/performance-lite',
-      use: { 
-        baseURL:'https://parabank.parasoft.com',
-       },
+  
     },
 
     /* Test against mobile viewports. */

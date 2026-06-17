@@ -4,7 +4,6 @@ import userData from '../test-data/userData.json'
 export class TransferFundsPage{
     constructor(page:Page){
         this.page=page
-       // this.transferLink='text=Transfer Funds'
         this.amount='input[id="amount"]'
         this.fromAccount='select[id="fromAccountId"]'
         this.toAccount='select[id="toAccountId"]'
@@ -19,7 +18,7 @@ export class TransferFundsPage{
         await this.page.locator(this.amount).fill(userData.transferAmount.toString())
         await this.page.locator('select#fromAccountId').selectOption({index:0})
 
-        await this.page.locator('select#toAccountId').selectOption({index:0})
+        await this.page.locator('select#toAccountId').selectOption({index:1})
 
         const fromId=await this.page.locator(this.fromAccount).inputValue()
         const toId=await this.page.locator(this.toAccount).inputValue()
@@ -40,11 +39,4 @@ export class TransferFundsPage{
      })
      
     }
-
-//     async getAccountId(){
-//         const account=await this.page.locator('select#toAccountId').inputValue()
-//         console.log(account);
-//         return account
-        
-//     }
  }

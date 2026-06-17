@@ -2,11 +2,7 @@ import {test} from '@playwright/test'
 import { RegisterPage } from '../../pages/RegisterPage'
 import { OpenAccountPage } from '../../pages/OpenAccountPage'
 import { AccountsOverviewPage } from '../../pages/AccountsOverviewPage'
-//import userData from '../../test-data/userData.json'
 import { generateUser } from '../../utils/dataGenerator'
-// const randomNumber=Date.now()
-// const username=`user${randomNumber}`
-// const password=userData.password
 
 const user=generateUser()
 

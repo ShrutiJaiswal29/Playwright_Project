@@ -2,11 +2,7 @@ import {test} from '@playwright/test'
 import { RegisterPage } from '../../pages/RegisterPage'
 import { TransferFundsPage } from '../../pages/TransferFundsPage'
 import { OpenAccountPage } from '../../pages/OpenAccountPage'
-//import userData from '../../test-data/userData.json'
 import { generateUser } from '../../utils/dataGenerator'
-// const randomNumber=Date.now()
-// const username=`user${randomNumber}`
-// const password='Test@123'
 
 const user=generateUser()
 test('@smoke transfer funds',async({page})=>{

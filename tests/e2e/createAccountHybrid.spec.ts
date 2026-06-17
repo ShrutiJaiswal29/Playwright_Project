@@ -1,12 +1,11 @@
-import {test, expect} from '@playwright/test'
+import {test, expect} from '../../fixtures//apiFixture'
 import {RegisterPage} from '../../pages/RegisterPage'
 import {OpenAccountPage} from '../../pages/OpenAccountPage'
 import {generateUser} from '../../utils/dataGenerator'
-
-const baseUrl = 'https://parabank.parasoft.com/parabank/services/bank'
+import userData from '../../test-data/userData.json'
 const user = generateUser()
 
-test('@e2e @smoke create account ui and validate api', async({page, request}) => {
+test('@e2e @smoke create account ui and validate api', async({page, request,baseUrl}) => {
     const register = new RegisterPage(page)
     const account = new OpenAccountPage(page)
 
@@ -19,17 +18,34 @@ test('@e2e @smoke create account ui and validate api', async({page, request}) =>
     await account.openAccount()
     await account.createAccount('SAVINGS')
 
-    const listRes = await request.get(`${baseUrl}/customers/12212/accounts`, {headers: {Accept: 'application/json'}})
+    //get the customer account
+    const listRes = await request.get(`${baseUrl}/customers/${userData.customerId}/accounts`, 
+    {
+        headers: 
+        {
+        Accept: 'application/json'
+    }
+    })
+
     const accounts = await listRes.json()
     const newAccountId = accounts[accounts.length - 1].id.toString()
     console.log('Account id from API:', newAccountId)
 
-    const response = await request.get(`${baseUrl}/accounts/${newAccountId}`, {headers: {Accept: 'application/json'}})
+    //get details of that account
+    const response = await request.get(`${baseUrl}/accounts/${newAccountId}`, 
+    {
+        headers:
+        {
+        Accept: 'application/json'
+    }
+    })
     console.log('API status:', response.status())
     const body = await response.json()
-
+    console.log('Body:',body);
+    
     expect(response.status()).toBe(200)
     expect(['SAVINGS','CHECKING','LOAN']).toContain(body.type)
+    
     expect(typeof body.balance).toBe('number')
-    console.log('HYBRID TEST PASSED - type:', body.type)
+    console.log('Hybrid Test Passed - type:', body.type)
 })

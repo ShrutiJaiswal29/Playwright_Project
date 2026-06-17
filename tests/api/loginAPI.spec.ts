@@ -1,10 +1,8 @@
 import {test,expect} from '../../fixtures/apiFixture'
-// import userData from '../../test-data/userData.json'
-
-//onst baseUrl='https://parabank.parasoft.com/parabank/services/bank'
+import userData from '../../test-data/userData.json'
 
 test('@api validate login api',async({request,baseUrl})=>{
-    const response=await request.get(`${baseUrl}/login/john/demo`)
+    const response=await request.get(`${baseUrl}/login/${userData.username}/${userData.password}`)
 
     console.log('Status:',response.status())
 
