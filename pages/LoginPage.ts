@@ -4,6 +4,9 @@ constructor(page:Page){
   this.page=page
   this.username='input[name="username"]'
   this.password='input[name="password"]'
+  this.loginButton='input[value="Log In"]'
+  this.errorMessage='p.error';
+  
 }
 
 async openLogin(){
@@ -18,7 +21,7 @@ async login(username:string,password:string){
   
 }
 
-async validateLogin(){
+async validateLoginSuccess(){
 await expect(this.page).toHaveURL(/overview\.htm/)
 console.log('Login successful')
 
@@ -26,5 +29,9 @@ await this.page.screenshot({path:'screenshots/login/login.png'})
 
 }
 
+async validateLoginError(){
+  await expect(this.page.locator(this.errorMessage)).toContainText('An internal error')
+  console.log('error message shown correctly');
+  
 }
-
+}

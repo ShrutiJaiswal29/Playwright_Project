@@ -11,6 +11,7 @@
     "phone":"1234567890",
     "ssn": "0987654321",
     "transferAmount":"350",
+    "invalidPassword":"wrongpass",
 
     "customerId":"12212"
 }

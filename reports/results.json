@@ -131,39 +131,39 @@
   },
   "suites": [
     {
-      "title": "performance-lite\\performance.spec.ts",
-      "file": "performance-lite/performance.spec.ts",
+      "title": "ui\\login.spec.ts",
+      "file": "ui/login.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "@regression page load time check",
+          "title": "@smoke login with valid credentials",
           "ok": true,
           "tags": [
-            "regression"
+            "smoke"
           ],
           "tests": [
             {
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "performance-lite",
-              "projectName": "performance-lite",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2270,
+                  "duration": 3787,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Page load time: \u001b[33m1630.0999999940395\u001b[39m ms\n"
+                      "text": "Login successful\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-17T15:08:12.684Z",
+                  "startTime": "2026-06-17T15:43:16.043Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -171,13 +171,13 @@
               "status": "expected"
             }
           ],
-          "id": "b15d6361b2fc38288977-01f18d19f2b877234c3d",
-          "file": "performance-lite/performance.spec.ts",
+          "id": "41d3fd2474a19feb00a1-b089d3e10c86b4e45b5a",
+          "file": "ui/login.spec.ts",
           "line": 5,
           "column": 5
         },
         {
-          "title": "@regression API response must be under 2 seconds",
+          "title": "@regression login with wrong password shows error",
           "ok": true,
           "tags": [
             "regression"
@@ -187,23 +187,23 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "performance-lite",
-              "projectName": "performance-lite",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 547,
+                  "duration": 3164,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "API response time: \u001b[33m505\u001b[39m ms\n"
+                      "text": "error message shown correctly\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-17T15:08:12.698Z",
+                  "startTime": "2026-06-17T15:43:16.091Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -211,13 +211,53 @@
               "status": "expected"
             }
           ],
-          "id": "b15d6361b2fc38288977-0ba2dfeb89fded555d08",
-          "file": "performance-lite/performance.spec.ts",
-          "line": 15,
+          "id": "41d3fd2474a19feb00a1-573947c66898873c481b",
+          "file": "ui/login.spec.ts",
+          "line": 16,
           "column": 5
         },
         {
-          "title": "@regression 20 concurrent calls all return 200",
+          "title": "@smoke login with valid credentials",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4367,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Login successful\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-17T15:43:20.849Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41d3fd2474a19feb00a1-b36ce70eda88a7937377",
+          "file": "ui/login.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "@regression login with wrong password shows error",
           "ok": true,
           "tags": [
             "regression"
@@ -227,26 +267,23 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "performance-lite",
-              "projectName": "performance-lite",
+              "projectId": "firefox",
+              "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 752,
+                  "duration": 4097,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "20 calls done in: \u001b[33m716\u001b[39m ms\n"
-                    },
-                    {
-                      "text": "All 20 calls returned 200\n"
+                      "text": "error message shown correctly\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-17T15:08:13.333Z",
+                  "startTime": "2026-06-17T15:43:20.903Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -254,9 +291,9 @@
               "status": "expected"
             }
           ],
-          "id": "b15d6361b2fc38288977-b7fc8729cedab6b88021",
-          "file": "performance-lite/performance.spec.ts",
-          "line": 26,
+          "id": "41d3fd2474a19feb00a1-d53386b3f8ca93ab3c76",
+          "file": "ui/login.spec.ts",
+          "line": 16,
           "column": 5
         }
       ]
@@ -264,9 +301,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-17T15:08:11.964Z",
-    "duration": 3988.0559999999996,
-    "expected": 3,
+    "startTime": "2026-06-17T15:43:15.050Z",
+    "duration": 11814.985999999999,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
