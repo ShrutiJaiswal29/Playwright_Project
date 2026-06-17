@@ -131,14 +131,14 @@
   },
   "suites": [
     {
-      "title": "ui\\login.spec.ts",
-      "file": "ui/login.spec.ts",
+      "title": "ui\\transferFunds.spec.ts",
+      "file": "ui/transferFunds.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "@smoke login with valid credentials",
-          "ok": true,
+          "title": "@smoke transfer funds",
+          "ok": false,
           "tags": [
             "smoke"
           ],
@@ -153,72 +153,75 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3787,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 14010,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('select#fromAccountId option').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('select#fromAccountId option').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <option value=\"14454\" selected=\"true\">14454</option>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('select#fromAccountId option').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('select#fromAccountId option').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <option value=\"14454\" selected=\"true\">14454</option>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at TransferFundsPage.transferFunds (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts:28:72)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\transferFunds.spec.ts:23:5",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts",
+                      "column": 72,
+                      "line": 28
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\TransferFundsPage.ts:28\n\n\u001b[0m \u001b[90m 26 |\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\n \u001b[90m 27 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[36mconst\u001b[39m options\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mcount()\n \u001b[90m 31 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts",
+                        "column": 72,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('select#fromAccountId option').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('select#fromAccountId option').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <option value=\"14454\" selected=\"true\">14454</option>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\TransferFundsPage.ts:28\n\n\u001b[0m \u001b[90m 26 |\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\n \u001b[90m 27 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[36mconst\u001b[39m options\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mcount()\n \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[2m    at TransferFundsPage.transferFunds (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts:28:72)\u001b[22m\n\u001b[2m    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\transferFunds.spec.ts:23:5\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
-                      "text": "Login successful\n"
+                      "text": "Registration successful\n"
+                    },
+                    {
+                      "text": "New Account ID: \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-17T15:43:16.043Z",
+                  "startTime": "2026-06-17T16:14:03.184Z",
                   "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "41d3fd2474a19feb00a1-b089d3e10c86b4e45b5a",
-          "file": "ui/login.spec.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "@regression login with wrong password shows error",
-          "ok": true,
-          "tags": [
-            "regression"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 3164,
-                  "errors": [],
-                  "stdout": [
+                  "attachments": [
                     {
-                      "text": "error message shown correctly\n"
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-chromium\\error-context.md"
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-17T15:43:16.091Z",
-                  "annotations": [],
-                  "attachments": []
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts",
+                    "column": 72,
+                    "line": 28
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "41d3fd2474a19feb00a1-573947c66898873c481b",
-          "file": "ui/login.spec.ts",
-          "line": 16,
+          "id": "f18fe70319761714dc29-57abd543c1c3a5916b4e",
+          "file": "ui/transferFunds.spec.ts",
+          "line": 8,
           "column": 5
         },
         {
-          "title": "@smoke login with valid credentials",
-          "ok": true,
+          "title": "@smoke transfer funds",
+          "ok": false,
           "tags": [
             "smoke"
           ],
@@ -231,69 +234,72 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 1,
                   "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 4367,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 15952,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('select#fromAccountId option').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('select#fromAccountId option').first()\u001b[22m\n\u001b[2m    13 × locator resolved to <option value=\"14565\" selected=\"true\">14565</option>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('select#fromAccountId option').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('select#fromAccountId option').first()\u001b[22m\n\u001b[2m    13 × locator resolved to <option value=\"14565\" selected=\"true\">14565</option>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n    at TransferFundsPage.transferFunds (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts:28:72)\n    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\transferFunds.spec.ts:23:5",
+                    "location": {
+                      "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts",
+                      "column": 72,
+                      "line": 28
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\TransferFundsPage.ts:28\n\n\u001b[0m \u001b[90m 26 |\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\n \u001b[90m 27 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[36mconst\u001b[39m options\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mcount()\n \u001b[90m 31 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts",
+                        "column": 72,
+                        "line": 28
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('select#fromAccountId option').first()\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('select#fromAccountId option').first()\u001b[22m\n\u001b[2m    13 × locator resolved to <option value=\"14565\" selected=\"true\">14565</option>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\TransferFundsPage.ts:28\n\n\u001b[0m \u001b[90m 26 |\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\n \u001b[90m 27 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mfirst())\u001b[33m.\u001b[39mtoBeVisible()\n \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m \u001b[36mconst\u001b[39m options\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'select#fromAccountId option'\u001b[39m)\u001b[33m.\u001b[39mcount()\n \u001b[90m 31 |\u001b[39m\u001b[0m\n\u001b[2m    at TransferFundsPage.transferFunds (C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts:28:72)\u001b[22m\n\u001b[2m    at C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\tests\\ui\\transferFunds.spec.ts:23:5\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
-                      "text": "Login successful\n"
+                      "text": "Registration successful\n"
+                    },
+                    {
+                      "text": "New Account ID: \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-17T15:43:20.849Z",
+                  "startTime": "2026-06-17T16:14:03.151Z",
                   "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "41d3fd2474a19feb00a1-b36ce70eda88a7937377",
-          "file": "ui/login.spec.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "@regression login with wrong password shows error",
-          "ok": true,
-          "tags": [
-            "regression"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 4097,
-                  "errors": [],
-                  "stdout": [
+                  "attachments": [
                     {
-                      "text": "error message shown correctly\n"
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-firefox\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\test-results\\transferFunds--smoke-transfer-funds-firefox\\error-context.md"
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-17T15:43:20.903Z",
-                  "annotations": [],
-                  "attachments": []
+                  "errorLocation": {
+                    "file": "C:\\Users\\shrut\\OneDrive\\Desktop\\Playwright_Project\\pages\\TransferFundsPage.ts",
+                    "column": 72,
+                    "line": 28
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "41d3fd2474a19feb00a1-d53386b3f8ca93ab3c76",
-          "file": "ui/login.spec.ts",
-          "line": 16,
+          "id": "f18fe70319761714dc29-b403d15c93200597e336",
+          "file": "ui/transferFunds.spec.ts",
+          "line": 8,
           "column": 5
         }
       ]
@@ -301,11 +307,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-17T15:43:15.050Z",
-    "duration": 11814.985999999999,
-    "expected": 4,
+    "startTime": "2026-06-17T16:14:02.324Z",
+    "duration": 18888.473,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }
