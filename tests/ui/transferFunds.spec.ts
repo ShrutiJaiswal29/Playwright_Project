@@ -10,17 +10,27 @@ test('@smoke transfer funds',async({page})=>{
     const account=new OpenAccountPage(page)
     const transfer=new TransferFundsPage(page)
 
+    //register
     await register.openRegisterPage()
     await register.fillDetails(user)
     await register.fillCredentials(user.username, user.password)
-
     await register.submitRegister()
     await register.validateRegistration()
+
+    //create account 1
+    await account.openAccount()
+    await account.createAccount('CHECKING')
+
+    //create account 2
     await account.openAccount()
     await account.createAccount('SAVINGS')
-  
+
+    //open transfer page
     await transfer.openTransfer()
-    await transfer.transferFunds()
+    const ids=await transfer.transferFunds()
+
     await transfer.validateTransfer()
+    console.log('Transfer successful:',ids);
+    
 
 })
