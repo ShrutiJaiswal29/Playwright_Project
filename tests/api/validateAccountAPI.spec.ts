@@ -14,7 +14,6 @@ test('@api validate account exists', async({request, baseUrl}) => {
 
     const body = await response.json()
     console.log('Accounts:', body)
-    īī
     expect(body.length).toBeGreaterThan(0)
     console.log('Total accounts:', body.length)
 })
