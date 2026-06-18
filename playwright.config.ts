@@ -56,18 +56,20 @@ export default defineConfig({
     {
       name:'api',
       testDir:'./tests/api',
-
     },
-{
-     name:'e2e',
-    testDir:'./tests/e2e',
-    use: { ...devices['Desktop Chrome'] },
-  },
-
+    {
+      name:'e2e',
+      testDir:'./tests/e2e',
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'mcp',
+      testDir:'./tests/mcp',
+      use: { ...devices['Desktop Chrome'] },
+    },
     {
       name: 'performance-lite',
       testDir:'./tests/performance-lite',
-  
     },
 
     /* Test against mobile viewports. */
